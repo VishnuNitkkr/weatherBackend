@@ -11,7 +11,7 @@ const app=express();
 
 //middlewares
 app.use((req,res,next)=>{
-  res.setHeader("Access-Control-Allow-Origin",process.env.FRONTEND_URL)
+  res.setHeader("Access-Control-Allow-Origin",'https://weather-application-mu-ten.vercel.app')
   res.setHeader("Access-Control-Allow-Methods","GET,POST")
   res.setHeader("Access-Control-Allow-Headers","Content-Type")
 
