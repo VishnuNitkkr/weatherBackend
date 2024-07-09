@@ -20,7 +20,7 @@ app.use((req,res,next)=>{
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 app.use(cors({
-  origin: process.env.FRONTEND_URL,
+  origin: 'https://weather-application-mu-ten.vercel.app',
   methods: ['GET', 'POST'],
   credentials: true,
   
